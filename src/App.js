@@ -1,25 +1,52 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+const Login = () => {
+
+    return (
+        <section className='AllPage'>
+            <section className='Logo' >
+                <img src='./IMAGE/NetflixLogo.webp' alt='Logo' />
+            </section>
+
+            <section className='LoginInputs' >
+
+                <div className='Enter' >
+                    <span id='EnterPageNetflix' >Entrar</span>
+                </div>
+
+                <div className='InputLogin' >
+
+                    <input type='text' placeholder='  Email ou número de celular' />
+                    <input type='password' placeholder='Senha' />
+
+                    <button>Entrar</button>
+
+                </div>
+
+                <div className='Or' ><span>OU</span></div>
+
+                <div className='UseCodig' >
+                    <button><span>Usar um código de acesso</span></button>
+                </div>
+
+                <div className='ForgetPassword' >
+                    <span> esqueceu a senha? </span>
+                </div>
+
+                <div className='rememberMe' >
+                    <input type='checkbox' />
+                    <span>Lembre-se de mim</span>
+                </div>
+
+
+
+            </section>
+
+        </section>
+    )
 }
 
-export default App;
+export default Login
