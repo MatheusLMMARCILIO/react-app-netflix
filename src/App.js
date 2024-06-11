@@ -10,41 +10,36 @@ const Login = () => {
             <section className='Logo' >
                 <img src='./IMAGE/NetflixLogo.webp' alt='Logo' />
             </section>
+            <section className='Login' >
+                <section className='LoginInputs' >
 
-            <section className='LoginInputs' >
+                    <div className='Enter' >
+                        <span id='EnterPageNetflix' >Entrar</span>
+                    </div>
 
-                <div className='Enter' >
-                    <span id='EnterPageNetflix' >Entrar</span>
-                </div>
+                    <div className='InputLogin' >
 
-                <div className='InputLogin' >
+                        <input type='text' placeholder='Email ou número de celular' />
+                        <input type='password' placeholder='Senha' />
 
-                    <input type='text' placeholder='  Email ou número de celular' />
-                    <input type='password' placeholder='Senha' />
+                        <button>Entrar</button>
 
-                    <button>Entrar</button>
+                    </div>
 
-                </div>
+                    <div className='Or' >
+                        <span>OU</span>
+                    </div>
 
-                <div className='Or' ><span>OU</span></div>
+                    <div className='UseCodig' >
+                        <button><span>Usar um código de acesso</span></button>
+                    </div>
 
-                <div className='UseCodig' >
-                    <button><span>Usar um código de acesso</span></button>
-                </div>
+                    <div className='ForgetPassword' >
+                        <span> esqueceu a senha? </span>
+                    </div>
 
-                <div className='ForgetPassword' >
-                    <span> esqueceu a senha? </span>
-                </div>
-
-                <div className='rememberMe' >
-                    <input type='checkbox' />
-                    <span>Lembre-se de mim</span>
-                </div>
-
-
-
+                </section>
             </section>
-
         </section>
     )
 }
