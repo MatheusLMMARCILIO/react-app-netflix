@@ -64,7 +64,7 @@
   padding: 0px 15px;
 }
 
-.InputLogin input::placeholder{
+.InputLogin input::placeholder {
   color: white;
 
 }
@@ -81,6 +81,7 @@
   font-family: sans-serif;
   cursor: pointer;
 }
+
 
 .InputLogin {
   display: flex;
@@ -111,6 +112,12 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.UseCodig {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .ForgetPassword span {

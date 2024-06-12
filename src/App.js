@@ -5,6 +5,22 @@ import './App.css';
 
 const Login = () => {
 
+const Name = 'Matheus'
+
+
+const InputName = document.querySelector('.InputName')
+const Password = document.querySelector('.InputPassword')
+
+function NextPage() {
+    if (InputName.value == Name && Password.value == '123' ) {
+window.location.href = './PAGES/WhoWatching/index.js'
+    }
+}
+
+
+
+
+
     return (
         <section className='AllPage'>
             <section className='Logo' >
@@ -19,10 +35,10 @@ const Login = () => {
 
                     <div className='InputLogin' >
 
-                        <input type='text' placeholder='Email ou número de celular' />
-                        <input type='password' placeholder='Senha' />
+                        <input type='text' className='InputName' placeholder='Email ou número de celular' />
+                        <input type='password' className='InputPassword' placeholder='Senha' />
 
-                        <button>Entrar</button>
+                        <button onClick={NextPage} >Entrar</button>
 
                     </div>
 
@@ -30,8 +46,9 @@ const Login = () => {
                         <span>OU</span>
                     </div>
 
+
                     <div className='UseCodig' >
-                        <button><span>Usar um código de acesso</span></button>
+                        <button  ><span>Usar um código de acesso</span></button>
                     </div>
 
                     <div className='ForgetPassword' >
