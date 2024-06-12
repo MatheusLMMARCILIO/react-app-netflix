@@ -26,6 +26,9 @@
 }
 
 .Login {
+
+  width: 100%;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,6 +80,13 @@
   font-weight: 400;
   font-family: sans-serif;
   cursor: pointer;
+}
+
+.InputLogin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .Or {
